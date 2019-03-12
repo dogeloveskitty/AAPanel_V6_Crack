@@ -1,14 +1,18 @@
-# btpanelv6.X_crack
+# AAPanelv6.X_crack
+
 宝塔面板v6.x破解
 
-# Update
-目前6.4正式版测试仍可用，其中仅宝塔同步工具无法使用。
+### Updated in 19.03.12  
+Fix  errors and now achieve the perfect crack
 
 # Usage
 
-`wget https://github.com/madlifer/btpanelv6.1_crack/releases/download/1/crack.sh && bash crack.sh`
+### Install AAPanel v6.X free Version  then  type this
+
+`wget -O crack.sh https://git.io/fhjV5 && bash crack.sh`
 
 
 # blog
 
-Https://madevo.net/
+https://madevo.net/
+
