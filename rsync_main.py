@@ -153,11 +153,12 @@ class rsync_main():
         params = {}
         params['pid'] = '100000005';
         result = panelAuth().send_cloud('check_plugin_status',params)
+        result['status'] = True
         try:
             if not result['status']: 
                 if 'rsync' in session: del(session['rsync'])
                 return result;
-        # except: pass;
+        except: pass;
         session['rsync'] = True
         return result
     
@@ -681,4 +682,5 @@ pid file = /var/run/rsyncd.pid
                     data['client'].insert(0,sclient)
                 os.remove(self.rsyn_path + '/serverdict.json')
             public.writeFile(self.rsyn_path + '/config.json',json.dumps(data))
+
 
