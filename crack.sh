@@ -5,7 +5,7 @@ Error="${Red_font}[Error]${Font_suffix}"
 Important="${Red_font}[选择前须知:]${Font_suffix}"
 PANEL_DIR=/www/server/panel
 PLUGIN_RETURN=在面板安装插件完成之后，从下表选择你要破解的插件:
-MAIN_RETURN=${Red_font}[宝塔面板v6.1.2破解脚本]${Font_suffix}
+MAIN_RETURN=${Red_font}[宝塔面板v6.X破解脚本]${Font_suffix}
 
 git_check(){
 	GIT_V=`git --version | grep -q version`
@@ -82,47 +82,47 @@ restart_btpanel(){
 }
 
 install_tamper_proof(){
-	cp -pf /root/btpanelv6.1_crack/tamper_proof_main.py ${PANEL_DIR}/plugin/tamper_proof/tamper_proof_main.py
+	cp -pf /root/btpanelv6.x_crack/tamper_proof_main.py ${PANEL_DIR}/plugin/tamper_proof/tamper_proof_main.py
 	PLUGIN_RETURN=${Red_font}[网站防篡改程序]${Font_suffix}破解完成，继续破解或返回主菜单: && plugin_choose
 }
 
 install_btwaf_httpd(){
-	cp -pf /root/btpanelv6.1_crack/btwaf_httpd_main.py ${PANEL_DIR}/plugin/btwaf_httpd/btwaf_httpd_main.py
+	cp -pf /root/btpanelv6.x_crack/btwaf_httpd_main.py ${PANEL_DIR}/plugin/btwaf_httpd/btwaf_httpd_main.py
 	PLUGIN_RETURN=${Red_font}[Apache防火墙]${Font_suffix}破解完成，继续破解或返回主菜单: && plugin_choose
 }
 
 install_total_main(){
-	cp -pf /root/btpanelv6.1_crack/total_main.py ${PANEL_DIR}/plugin/total/total_main.py
+	cp -pf /root/btpanelv6.x_crack/total_main.py ${PANEL_DIR}/plugin/total/total_main.py
 	PLUGIN_RETURN=${Red_font}[网站监控报表]${Font_suffix}破解完成，继续破解或返回主菜单: && plugin_choose
 }
 
 install_btwaf(){
-	cp -pf /root/btpanelv6.1_crack/btwaf_main.py ${PANEL_DIR}/plugin/btwaf/btwaf_main.py
+	cp -pf /root/btpanelv6.x_crack/btwaf_main.py ${PANEL_DIR}/plugin/btwaf/btwaf_main.py
 	PLUGIN_RETURN=${Red_font}[Nginx防火墙]${Font_suffix}破解完成，继续破解或返回主菜单: && plugin_choose
 }
 
 install_load_leveling(){
-	cp -pf /root/btpanelv6.1_crack/load_leveling_main.py ${PANEL_DIR}/plugin/load_leveling/load_leveling_main.py
+	cp -pf /root/btpanelv6.x_crack/load_leveling_main.py ${PANEL_DIR}/plugin/load_leveling/load_leveling_main.py
 	PLUGIN_RETURN=${Red_font}[宝塔负载均衡]${Font_suffix}破解完成，继续破解或返回主菜单: && plugin_choose
 }
 
 install_masterslave(){
-	cp -pf /root/btpanelv6.1_crack/masterslave_main.py ${PANEL_DIR}/plugin/masterslave/masterslave_main.py
+	cp -pf /root/btpanelv6.x_crack/masterslave_main.py ${PANEL_DIR}/plugin/masterslave/masterslave_main.py
 	PLUGIN_RETURN=${Red_font}[MYSQL主从复制]${Font_suffix}破解完成，继续破解或返回主菜单: && plugin_choose
 }
 
 install_task_manager(){
-	cp -pf /root/btpanelv6.1_crack/task_manager_main.py ${PANEL_DIR}/plugin/task_manager/task_manager_main.py
+	cp -pf /root/btpanelv6.x_crack/task_manager_main.py ${PANEL_DIR}/plugin/task_manager/task_manager_main.py
 	PLUGIN_RETURN=${Red_font}[任务管理器]${Font_suffix}破解完成，继续破解或返回主菜单: && plugin_choose
 }
 
 install_rsync(){
-	cp -pf /root/btpanelv6.1_crack/rsync_main.py ${PANEL_DIR}/plugin/rsync/rsync_main.py
+	cp -pf /root/btpanelv6.x_crack/rsync_main.py ${PANEL_DIR}/plugin/rsync/rsync_main.py
 	PLUGIN_RETURN=${Red_font}[数据同步工具]${Font_suffix}破解完成，继续破解或返回主菜单: && plugin_choose
 }
 
 del_crack_file(){
-	rm -rf /root/btpanelv6.1_crack
+	rm -rf /root/btpanelv6.x_crack
 	MAIN_RETURN=${Red_font}[删除破解包]${Font_suffix}操作已完成。
 }
 
@@ -190,10 +190,10 @@ main(){
 clear
 echo -e "${Green_font}
 #=======================================
-# Name:         bt-6.1-crack
+# Name:         AAPanel_V6_Crack
 # Project:      https://git.io/fxiwt
-# requirement:  bt v6.1 free version
-# Version:      0.0.1
+# requirement:  bt v6.x free version
+# Version:      0.0.2
 # Author:       madlifer
 # Thanks:       @king51
 # Copyright:    https://madevo.net
